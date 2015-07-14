@@ -1,0 +1,248 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  
+  <!-- dependencies -->
+  <link rel="stylesheet" type="text/css" href="../node_modules/grunt-mocha-phantomjs/node_modules/mocha-phantomjs/node_modules/mocha/mocha.css">
+  <script src="../sdk/lib/jquery/jquery-1.9.1.js"></script>
+  <script src="../sdk/lib/underscore/underscore.js"></script>
+  <script src="../sdk/lib/backbone/backbone.js"></script>
+  <script src="../sdk/lib/backbone/backbone.localstorage.js"></script>
+  <!--<script src="lib/mocha/mocha.js"></script>-->
+  <script src="../node_modules/grunt-mocha-phantomjs/node_modules/mocha-phantomjs/node_modules/mocha/mocha.js"></script>
+  <script src="lib/chai/chai.js"></script>
+  <script src="lib/sinon/sinon-1.4.2.js"></script>
+  
+  <!-- sdk -->
+  <script src="../ap_sdk.js"></script>
+  
+  <!-- setup -->
+  <script>
+    AP.useMockServer = true;
+    AP.useOfflineCache = true;
+    LoyaltyRtrSdk.init();
+    mocha.setup({
+      ui: 'bdd',
+      ignoreLeaks: true
+    });
+  </script>
+  
+  <!-- collection tests -->
+  
+  
+  <script src="collection/app_configuration_all.js"></script>
+  
+  <script src="collection/app_configuration_exact_match.js"></script>
+  
+  <script src="collection/app_configuration_count.js"></script>
+  
+  <script src="collection/app_configuration_count_exact_match.js"></script>
+  
+  <script src="collection/app_configuration_get_language_settings.js"></script>
+  
+  
+  
+  <script src="collection/audit_all.js"></script>
+  
+  <script src="collection/audit_exact_match.js"></script>
+  
+  <script src="collection/audit_count.js"></script>
+  
+  <script src="collection/audit_count_exact_match.js"></script>
+  
+  
+  
+  <script src="collection/bank_all.js"></script>
+  
+  <script src="collection/bank_exact_match.js"></script>
+  
+  <script src="collection/bank_count.js"></script>
+  
+  <script src="collection/bank_count_exact_match.js"></script>
+  
+  <script src="collection/bank_get_bank_information.js"></script>
+  
+  <script src="collection/bank_show_participating_bank_names.js"></script>
+  
+  
+  
+  <script src="collection/bank_faq_all.js"></script>
+  
+  <script src="collection/bank_faq_exact_match.js"></script>
+  
+  <script src="collection/bank_faq_count.js"></script>
+  
+  <script src="collection/bank_faq_count_exact_match.js"></script>
+  
+  <script src="collection/bank_faq_get_bank_ranac.js"></script>
+  
+  
+  
+  <script src="collection/bank_offer_all.js"></script>
+  
+  <script src="collection/bank_offer_exact_match.js"></script>
+  
+  <script src="collection/bank_offer_count.js"></script>
+  
+  <script src="collection/bank_offer_count_exact_match.js"></script>
+  
+  <script src="collection/bank_offer_return_active_bank_offers.js"></script>
+  
+  
+  
+  <script src="collection/bank_ranac_all.js"></script>
+  
+  <script src="collection/bank_ranac_exact_match.js"></script>
+  
+  <script src="collection/bank_ranac_count.js"></script>
+  
+  <script src="collection/bank_ranac_count_exact_match.js"></script>
+  
+  
+  
+  <script src="collection/color_swatch_all.js"></script>
+  
+  <script src="collection/color_swatch_exact_match.js"></script>
+  
+  <script src="collection/color_swatch_count.js"></script>
+  
+  <script src="collection/color_swatch_count_exact_match.js"></script>
+  
+  
+  
+  <script src="collection/get_question_all.js"></script>
+  
+  <script src="collection/get_question_exact_match.js"></script>
+  
+  <script src="collection/get_question_count.js"></script>
+  
+  <script src="collection/get_question_count_exact_match.js"></script>
+  
+  <script src="collection/get_question_get_questions_by_ban.js"></script>
+  
+  
+  
+  <script src="collection/language_code_all.js"></script>
+  
+  <script src="collection/language_code_exact_match.js"></script>
+  
+  <script src="collection/language_code_count.js"></script>
+  
+  <script src="collection/language_code_count_exact_match.js"></script>
+  
+  
+  
+  <script src="collection/language_string_all.js"></script>
+  
+  <script src="collection/language_string_exact_match.js"></script>
+  
+  <script src="collection/language_string_count.js"></script>
+  
+  <script src="collection/language_string_count_exact_match.js"></script>
+  
+  
+  
+  <script src="collection/local_user_storage_all.js"></script>
+  
+  <script src="collection/local_user_storage_exact_match.js"></script>
+  
+  <script src="collection/local_user_storage_count.js"></script>
+  
+  <script src="collection/local_user_storage_count_exact_match.js"></script>
+  
+  
+  
+  <script src="collection/message_all.js"></script>
+  
+  <script src="collection/message_exact_match.js"></script>
+  
+  <script src="collection/message_count.js"></script>
+  
+  <script src="collection/message_count_exact_match.js"></script>
+  
+  <script src="collection/message_get_my_messages.js"></script>
+  
+  
+  
+  <script src="collection/rtr_all.js"></script>
+  
+  <script src="collection/rtr_exact_match.js"></script>
+  
+  <script src="collection/rtr_count.js"></script>
+  
+  <script src="collection/rtr_count_exact_match.js"></script>
+  
+  <script src="collection/rtr_get_my_ranac.js"></script>
+  
+  
+  
+  <script src="collection/user_all.js"></script>
+  
+  <script src="collection/user_exact_match.js"></script>
+  
+  <script src="collection/user_count.js"></script>
+  
+  <script src="collection/user_count_exact_match.js"></script>
+  
+  
+  
+  <!-- model tests -->
+  
+  <script src="model/app_configuration.js"></script>
+  
+  <script src="model/audit.js"></script>
+  
+  <script src="model/bank.js"></script>
+  
+  <script src="model/bank_faq.js"></script>
+  
+  <script src="model/bank_offer.js"></script>
+  
+  <script src="model/bank_ranac.js"></script>
+  
+  <script src="model/color_swatch.js"></script>
+  
+  <script src="model/get_question.js"></script>
+  
+  <script src="model/language_code.js"></script>
+  
+  <script src="model/language_string.js"></script>
+  
+  <script src="model/local_user_storage.js"></script>
+  
+  <script src="model/message.js"></script>
+  
+  <script src="model/rtr.js"></script>
+  
+  <script src="model/user.js"></script>
+  
+  
+  <!-- framework tests -->
+  <script src="ap.js"></script>
+  <script src="base64.js"></script>
+  <script src="cookie.js"></script>
+  <script src="validator.js"></script>
+  <script src="authentication.js"></script>
+  <script src="authorization.js"></script>
+  <script src="application.js"></script>
+  <script src="model.js"></script>
+  <script src="collection.js"></script>
+  <script src="scope_collection.js"></script>
+  <script src="relationship.js"></script>
+  
+  <!-- run -->
+  <script>
+    $(function () {
+      if (window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      } else {
+        mocha.run();
+      }
+    });
+  </script>
+</head>
+<body>
+  <div id="mocha"></div>
+</body>
+</html>
