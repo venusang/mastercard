@@ -1,0 +1,25 @@
+#brandingPanel {
+  width: 230px;
+  height: 172px;
+  background: url("logo-230x172.png");
+  text-indent: -1000px;
+  overflow: hidden; }
+
+#bank-information h3 {
+  margin: 0; }
+#bank-information .page-header {
+  margin-top: 0; }
+#bank-information ul, #bank-information ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  #bank-information ul label:after, #bank-information ul li label:after {
+    content: ":"; }
+  #bank-information ul sup, #bank-information ul li sup {
+    font-style: italic; }
+#bank-information span {
+  float: right; }
+
+.navbar-form {
+  margin: 0;
+  padding: 0; }

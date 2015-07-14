@@ -411,11 +411,14 @@
    * that is generated from the parse.
    */
   Writer.prototype.parse = function (template, tags) {
-    if (!(template in this.cache)) {
-      this.cache[template] = parseTemplate(template, tags);
+    var cache = this.cache;
+    var tokens = cache[template];
+
+    if (tokens == null) {
+      tokens = cache[template] = parseTemplate(template, tags);
     }
 
-    return this.cache[template];
+    return tokens;
   };
 
   /**
@@ -493,8 +496,8 @@
         break;
       case '>':
         if (!partials) continue;
-        value = this.parse(isFunction(partials) ? partials(token[1]) : partials[token[1]]);
-        if (value != null) buffer += this.renderTokens(value, context, partials, originalTemplate);
+        value = isFunction(partials) ? partials(token[1]) : partials[token[1]];
+        if (value != null) buffer += this.renderTokens(this.parse(value), context, partials, value);
         break;
       case '&':
         value = context.lookup(token[1]);
@@ -514,7 +517,7 @@
   };
 
   mustache.name = "mustache.js";
-  mustache.version = "0.8.0";
+  mustache.version = "0.8.1";
   mustache.tags = [ "{{", "}}" ];
 
   // All high-level mustache.* functions use this writer.

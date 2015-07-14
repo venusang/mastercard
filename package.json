@@ -1,17 +1,22 @@
 {
-  "name": "LoyaltyRtr",
-  "description": "MasterCard Loyalty RTR",
-  "version": "0.0.1",
+  "name": "MasterCard Real Time Rewards Application Manager",
   "dependencies": {
-    "grunt": "0.4.1",
-    "grunt-cli": "0.1.8",
-    "grunt-contrib-coffee": "0.7.0",
-    "grunt-contrib-concat": "0.3.0",
-    "grunt-mocha-phantomjs": "0.2.7",
-    "grunt-contrib-watch": "0.4.0",
-    "grunt-contrib-yuidoc": "0.5.0",
-    "grunt-templater": "0.0.4",
-    "mustache": "0.8.0",
-    "markdown": "0.5.0"
+    "grunt": "",
+    "grunt-cli": "",
+    "grunt-templater": "",
+    "mustache": "",
+    "grunt-contrib-clean": "",
+    "grunt-contrib-copy": "",
+    "grunt-contrib-sass": "",
+    "grunt-contrib-coffee": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-cssmin": "",
+    "grunt-contrib-compress": "",
+    "grunt-contrib-watch": "",
+    
+    "jquery": "",
+    "backbone": "",
+    "twitter-bootstrap-3.0.0": ""
   }
 }
