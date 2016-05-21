@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started 
 
 This is a skeleton application based on Bootstrap.  It is intended for use with
 an AnyPresence JavaScript SDK.
